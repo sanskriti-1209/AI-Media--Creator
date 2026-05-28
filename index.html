@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Media Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Media Creator</h1>
+        
+        <!-- User Input Area -->
+        <div class="input-section">
+            <input type="text" id="userPrompt" placeholder="Describe what you want to create...">
+            <div class="buttons">
+                <button onclick="generateImage()">Generate Image</button>
+                <button onclick="generateAudio()">Generate Audio</button>
+                <button onclick="generateVideo()">Generate Video</button>
+            </div>
+        </div>
+
+        <!-- Results Area -->
+        <div class="display-grid">
+            <div class="card">
+                <h3>Image Result</h3>
+                <div id="imageResult" class="placeholder">Result will appear here</div>
+            </div>
+            <div class="card">
+                <h3>Audio Result</h3>
+                <div id="audioResult" class="placeholder">Result will appear here</div>
+            </div>
+            <div class="card">
+                <h3>Video Result</h3>
+                <div id="videoResult" class="placeholder">Result will appear here</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
