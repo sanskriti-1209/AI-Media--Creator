@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://ai-media-creator.onrender.com";
 const IMAGE_ENDPOINTS = [
   `${API_BASE}/api/generate-image`,
   `${API_BASE}/generate-image`
