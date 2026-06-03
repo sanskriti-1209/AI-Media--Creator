@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api
+Disallow: /*.json$
+
+Sitemap: https://ai-media-creator.vercel.app/sitemap.xml

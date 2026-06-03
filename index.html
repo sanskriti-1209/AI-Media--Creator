@@ -3,36 +3,71 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>AI Media Studio</title>
+    <meta name="description" content="AI Media Creator - Generate professional images, audio, and videos with AI. Fast, easy, and powerful media generation tool for content creators."/>
+    <meta name="keywords" content="AI media creator, AI image generator, AI video generator, AI audio generator, media creation tool"/>
+    <meta name="author" content="AI Media Creator"/>
+    <meta name="robots" content="index, follow"/>
+    <meta property="og:title" content="AI Media Creator - Generate Professional Media with AI"/>
+    <meta property="og:description" content="Create stunning images, videos, and audio with AI. Fast, easy, and professional results."/>
+    <meta property="og:url" content="https://ai-media-creator.vercel.app/"/>
+    <meta property="og:type" content="website"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="AI Media Creator"/>
+    <meta name="twitter:description" content="Generate professional media with AI in seconds"/>
+    
+    <title>AI Media Creator | AI-Powered Image, Video & Audio Generator</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="canonical" href="https://ai-media-creator.vercel.app/"/>
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "AI Media Creator",
+      "description": "Generate professional images, videos, and audio with AI",
+      "url": "https://ai-media-creator.vercel.app/",
+      "applicationCategory": "Multimedia",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "AI Media Creator"
+      }
+    }
+    </script>
 </head>
 <body>
     <div class="container">
         <h1>AI Media Creator</h1>
+        <p class="tagline">Generate Professional Images, Videos & Audio with AI</p>
 
         <!-- User Input Area -->
         <div class="input-section">
-            <input type="text" id="userPrompt" placeholder="Describe what you want to create..." />
+            <input type="text" id="userPrompt" placeholder="Describe what you want to create..." aria-label="Media description input"/>
             <div class="buttons">
-                <button id="btnImage">Generate Image</button>
-                <button id="btnAudio">Generate Audio</button>
-                <button id="btnVideo">Generate Video</button>
+                <button id="btnImage" aria-label="Generate AI Image">Generate Image</button>
+                <button id="btnAudio" aria-label="Generate AI Audio">Generate Audio</button>
+                <button id="btnVideo" aria-label="Generate AI Video">Generate Video</button>
             </div>
         </div>
 
         <!-- Results Area -->
         <div class="display-grid">
             <div class="card">
-                <h3>Image Result</h3>
-                <div id="imageResult" class="placeholder">Result will appear here</div>
+                <h2>Image Result</h2>
+                <div id="imageResult" class="placeholder" role="region" aria-label="Image generation result">Result will appear here</div>
             </div>
             <div class="card">
-                <h3>Audio Result</h3>
-                <div id="audioResult" class="placeholder">Result will appear here</div>
+                <h2>Audio Result</h2>
+                <div id="audioResult" class="placeholder" role="region" aria-label="Audio generation result">Result will appear here</div>
             </div>
             <div class="card">
-                <h3>Video Result</h3>
-                <div id="videoResult" class="placeholder">Result will appear here</div>
+                <h2>Video Result</h2>
+                <div id="videoResult" class="placeholder" role="region" aria-label="Video generation result">Result will appear here</div>
             </div>
         </div>
     </div>
